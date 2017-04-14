@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stuckless Benjamin - Final Integrated</title>
+	<link rel="stylesheet" type="text/css" href="css/new_main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaAMtTrWeC7Fs4b8pCuj_USleTUT6AhBM"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="topBar"></div>
+	<main>
+	
+		
+		
+		<header>
+			<a href="index.html"><img src="images/MHS_logo.png" class="main-logo" alt="Chantry Logo"></a>
+			<div id="mainNav">
+					<ul>
+						<a href="index.html" style="color: #000;"><li>Home</li></a>
+						<a href="about.html" style="color: #000;"><li>Services We Provide</li></a>
+						<a href="contact.html" style="color: #000;"><li>Contact Us</li></a>
+					</ul>
+			</div>
+		
+		</header>
+	<!-- set up the html file for the Google Maps API -->
+
+	
+	<div class="preloader">
+
+		<i class="fa fa-spinner fa-spin"></i>
+		<span>loading map, please wait...</span>
+	</div>
+	<div id="boxCont">
+		<div id="box1">
+	<h2>Directions</h2>
+	<p>From Richmond street, turn West onto Dundas.  After Talbot street, you have reached your destination!</p>
+	<button id="mainBut3" class=" hvr-icon-drop">Enter your location</button>
+</div>
+	<div id="box2">
+	<h2>Location</h2>
+	<p>100 Dundas Street - Suite 707</p>
+<p>London, Ontario</p>
+<p>Canada N5W 0A6</p>
+	<button id="mainBut4" class=" hvr-icon-float">Open/Close Map Menu</button>
+</div>
+</div>
+	<div id="map123" class="mapCanvas"></div>
+
+<br><br>
+
+<p id="pide"  class="hidden" style="text-align: center; font-family: Tahoma; font-size: 10px; letter-spacing: 4px; opacity: 0.6;">- - - MAP CONTROLS - - -</p>
+<div id="greyBox" class="hidden">
+<button id="mainBut" class=" hvr-icon-drop">Chart your course!</button>
+<button id="mainBut2" class=" hvr-icon-push">Hide/Show Maps</button>
+
+<div id="mainArea" class="hidden">
+	<p style="text-align: center; color: #999;">Enter your location</p>
+	<input type="texbox" class="address"></input>
+	<button class="geocode hvr-icon-drop">Get Directions!</button>
+	</div>
+	</div>
+	<br><hr>
+	<h2 style="text-align: center; font-family: Helvetica; ">Question or concern? Contact us!</h2>
+		 <form name="contactForm" method="post" action="send_form_email.php">
+  <label id="first_name">First Name</label>
+  <input  type="text" name="first_name" maxlength="50" size="30">
+  <label id="last_name">Last Name</label>
+  <input  type="text" name="last_name" maxlength="50" size="30">
+  <label id="email">Email Address</label>
+  <input  type="text" name="email" maxlength="80" size="30">
+  <label id="telephone">Phone Number</label>
+  <input  type="text" name="telephone" maxlength="30" size="30">
+  <label id="comments">Message</label>
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+  <input type="submit" value="Submit">
+</form>
+
+</main>
+
+	<footer>
+		<p>Copyright &copy; 2017 Mental Health Association of Canada</p>
+	</footer>
+	<script src="js/main.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
