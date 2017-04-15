@@ -1,8 +1,6 @@
 // JavaScript Document
 // by Ben Stuckless 
-// The Lost Boys Design
-// for Multimedia Authoring
-// 2015.04.12
+
 
 
 //Video Variables
